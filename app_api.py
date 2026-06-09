@@ -13,15 +13,15 @@ DB_CONFIG = {
     'user': 'root',
     'password': '',
     'database': 'db_smarttech',
-    'cursorclass': pymysql.cursors.DictCursor  # Faz o banco retornar os dados como dicionários (formato JSON)
+    'cursorclass': pymysql.cursors.DictCursor  
 }
 
-# 🌐 ROTA PRINCIPAL: Teste de funcionamento
+
 @app.get("/")
 def ler_raiz():
     return {"status": "API Online", "mensagem": "Use a rota /smartphones para ver os dados."}
 
-# 📱 ROTA DE DADOS: Busca todos os celulares do banco
+
 @app.get("/smartphones")
 def listar_smartphones():
     try:
