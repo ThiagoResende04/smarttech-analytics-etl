@@ -7,7 +7,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configurações de acesso ao MySQL (Padrão do XAMPP)
+
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
